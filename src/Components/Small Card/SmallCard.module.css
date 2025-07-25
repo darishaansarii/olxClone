@@ -1,0 +1,28 @@
+.smallCard {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f4f5;
+    width: 100%;
+}
+
+.imgContainer > img {
+    width: inherit;
+}
+
+.textContainer {
+    text-align: center;
+}
+
+@media (max-width: 310px) {
+    .smallCard {
+        width: 90%;
+    }
+}
+

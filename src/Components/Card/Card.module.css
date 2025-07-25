@@ -1,0 +1,44 @@
+.bigCard {
+    height: 22rem;
+    width: 18rem;
+    overflow: hidden;
+}
+
+.cardImg {
+    height: 12rem;
+    width: 100%;
+    object-fit: contain;
+}
+
+.cardBody {
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardText {
+    font-size: 0.85rem;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardBtn {
+    width: 100%;
+    margin-top: auto;
+    background-color: #002f34;
+    border: none;
+}
+
+.cardBtn:hover {
+    background-color: #045f69;
+    transition: 0.5s all ease-in-out;
+}
+
+@media (max-width: 705px) {
+  .bigCard {
+    width: 90%;
+  }
+} 

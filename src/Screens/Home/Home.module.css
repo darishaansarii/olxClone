@@ -1,0 +1,417 @@
+.navbar {
+    background-color: #ebf1ff !important;
+    display: flex;
+    flex-direction: column;
+    z-index: 200;
+    /* column-gap: 0; */
+    height: 80px;
+  }
+  
+  .logo {
+    background-color: white;
+    padding: 8px 16px;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #3a77ff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+    top: 8px;
+    display: inline-block;
+    z-index: 1;
+  }
+  
+  .logo::before,
+  .logo::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+  
+  .logo::before {
+    left: -10px;
+  }
+  
+  .logo::after {
+    right: -10px;
+  }
+  
+  .logo:hover {
+    color: #3a77ff;
+  }
+  
+  .nav-img {
+    height: 25px;
+  }
+  
+  .nav-link {
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .nav-link:hover {
+    color: #3a77ff !important;
+  }
+  
+  .login {
+    font-weight: bold;
+    color: black;
+    padding: 10px 0px;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+  }
+  
+  .login:hover {
+    text-decoration: none;
+  }
+  
+  .plusIcon {
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .sell {
+    position: relative;
+    background: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .sell::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 6px;
+    background: conic-gradient(
+      from 0deg,
+      #23e5db 0deg 120deg,
+      #3a77ff 120deg 240deg,
+      #ffce32 240deg 360deg
+    );
+    border-radius: 20px;
+    z-index: -1;
+  
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+  
+  /* ****************SEARCH PART*********************** */
+  
+  .inputDiv {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-bottom: 1px solid #d8d8d8;
+    height: 90px;
+  }
+  
+  /* LOCATION */
+  
+  .location {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+  
+  .locationIcon {
+    border: 1px solid gray;
+    border-right: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 8px;
+    font-size: 2.5rem !important;
+  }
+  
+  .inputDiv select {
+    border-left: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 8px;
+    width: 92%;
+    height: 2.5rem;
+  }
+  
+  /* SEARCHBOX */
+  .searchBox {
+    display: flex;
+    width: 70%;
+  }
+  
+  .inputDiv input {
+    padding: 8px;
+    border: 1px solid grey;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 85%;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 16px;
+    background-color: #002f34;
+    color: #fff;
+    font-weight: bold;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .searchIcon {
+    font-size: 1.5rem;
+  }
+  
+  /* ******************************CATEGORIES PART ********************************* */
+  .categories {
+    padding-top: 180px;
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+  }
+  
+  .categories > li:hover {
+    color: #3a77ff;
+    cursor: pointer;
+  }
+  
+  .categories > li > select {
+    border: none;
+    font-weight: bold;
+  }
+  
+  .carousel {
+    margin-top: 12px;
+  }
+  
+  /* *****************************************Small Card Section***************************************** */
+  
+  .smallCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 50px;
+  }
+  
+  /* *****************************************Card Container********************************************** */
+  
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 50px;
+  }
+  
+  /* *************************************SHADOW FOR TOGGLE BUTTON********************************************** */
+  .shadow:focus {
+    box-shadow: 0 0 0.2rem #3a77ff;
+  }
+  
+  /* ***************************************MOST USED CSS CLASSES**************************************** */
+  .focus:focus {
+    outline: none;
+    border-color: #3a77ff;
+  }
+  .cursor {
+    cursor: pointer;
+  }
+  .bg {
+    background-color: white;
+  }
+  
+  /* ****************************************FOOTER SECTION******************************************** */
+  .footAd {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .footAd > img {
+    width: 70%;
+  }
+  
+  .footDownload {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #f7f8f9;
+    padding: 20px;
+    padding-bottom: 0;
+    border-bottom: 1px solid #dddcdc;
+  }
+  .footBox {
+    height: 10rem;
+    width: 25rem;
+  }
+  
+  .footContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .footContent > h2 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .color {
+    color: #3a77ff;
+  }
+  
+  .footImg {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+  
+  .footImg > img {
+    width: 200px;
+  }
+  
+  .footApp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .footApp > img {
+    width: 130px;
+  }
+  
+  /* Second Footer Div */
+  .footDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+    gap: 5px;
+    row-gap: 40px;
+    background-color: #f2f4f5;
+  }
+  
+  .footDiv > div {
+    width: 200px;
+  }
+  
+  .footDiv h6 {
+    font-weight: 700;
+    color: #002f34;
+  }
+  
+  .footComp {
+    list-style-type: none;
+    line-height: 2rem;
+  }
+  
+  .footComp li {
+    font-size: 15px;
+  }
+  
+  .iconContainer {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .iconContainer > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #002f34;
+  }
+  
+  .footCopyright {
+    background-color: #002f34;
+    color: white;
+    text-align: right;
+    padding: 20px 30px;
+    padding-bottom: 10;
+  }
+  
+  .footCopyright span {
+    font-weight: 700;
+  }
+  
+  /* *******************************************MEDIA QUERRY ******************************************** */
+  
+  @media (max-width: 991px) {
+    .navbar {
+      flex-direction: row;
+      height: 75px;
+    }
+    .collapse {
+      background-color: #fff;
+      padding: 10px;
+    }
+    .inputDiv {
+      padding-bottom: 0;
+      gap: 0px;
+      height: 150px;
+    }
+    .location,
+    .searchBox {
+      width: 100%;
+    }
+    .inputDiv select {
+      width: 96%;
+    }
+    .inputDiv input {
+      width: 90%;
+    }
+  
+    .categories {
+      padding-top: 240px;
+      row-gap: 5px;
+      flex-wrap: wrap;
+      font-size: 0.85rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .footAd > img {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .footApp {
+      height: 5rem;
+      padding: 20px 0;
+    }
+  
+    .footBox {
+      height: 10rem;
+    }
+  
+    .footCopyright {
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 310px) {
+    .smallCardContainer {
+      justify-content: center;
+    }
+  }
+  

@@ -1,0 +1,20 @@
+.card {
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #fdfdfd;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .button {
+    background-color: #002f34;
+  }
+
+  .button:hover {
+    background-color: #045f69;
+    transition: 0.5s all ease-in-out;
+  }
